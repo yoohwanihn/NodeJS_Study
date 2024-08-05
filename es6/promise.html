@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ES6 부터는 자바스크립트와 노드 API 들이 콜백 대신 프로미스 기반으로 재구성-->
+    <!-- 콜백 지옥 개선, 비동기 작업의 결과값을 나중에 전달해주는 객체 -->
+    <script>
+        const condition = true 
+        const promise = new Promise((resolve, reject) => {
+            if(condition){
+                resolve('성공')
+            } else {
+                reject('실패')
+            }
+        })
+
+        promise
+            .then((message) => {
+                console.log(message)    // resolve
+            })
+            .catch((error)=>{
+                console.log(error)  //reject
+            })
+            .finally(()=>{
+                console.log('무조건')
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 옵셔널 체이닝(?., ES2020 추가.)-->
+    <!-- 옵셔널 체이닝은 null이나 undefined의 속성을 조회하는 경우 에러가 발생하는 것을 막는다.-->
+    <!-- 일반적인 속성뿐만 아니라 함수 호출이나 배열 요소 접근에 대해서도 에러 방지 가능-->
+    <script>
+        const a = {}
+        a.b // a가 객체이므로 문제 없음
+
+        const c = null
+        try {
+            c.d
+        } catch(e) {
+            console.error(e) // TypeError : Cannot read properties of null (reading 'd')
+        }
+
+        c?.d // 문제 없음   => undefined가 됨
+        try{
+            c.f()
+        } catch(e){
+            console.error(e) // TypeError : Cannot read properties of null (reading 'f')
+        }
+        c?.f() // 문제 없음   => undefined가 됨
+
+        try{
+            c[0]
+        } catch(e) {
+            console.error(e) // TypeError : Cannot read properties of null (reading '0')
+        }
+        c?.[0] // 문제 없음   => undefined가 됨
+    </script>
+    
+</body>
+</html>
