@@ -19,10 +19,11 @@ Babel : 자바스크립트가 매번 업데이트 되기 때문에 구형 브라
 ## 패키지 종류
 
 #### js
-es6 : ES(2015++)6 로 변경되거나 추가 된 자바스크립트 문법들<br>
+<b>es6 :</b> ES(2015++)6 로 변경되거나 추가 된 자바스크립트 문법들<br>
+
 #### node 
-global : 자바스크립트가 아닌 노드 내장 객체 global의 timer와 console을 다루는 함수들(window X)<br>
-ECMAScript_module : Common JS 모듈이 아닌 ES Module 관련된 내장 객체들<br>
-built-in_module : 노드 내장 모듈<br>
-event : events 모듈을 이용해 이벤트 커스텀<br>
-error : 예외 처리<br>
+<b>global :</b> 자바스크립트가 아닌 노드 내장 객체 global의 timer와 console을 다루는 함수들(window X)<br>
+<b>ECMAScript_module :</b> Common JS 모듈이 아닌 ES Module 관련된 내장 객체들<br>
+<b>built-in_module :</b> 노드 내장 모듈<br>
+<b>event :</b> events 모듈을 이용해 이벤트 커스텀<br>
+<b>error :</b> 예외 처리<br>
