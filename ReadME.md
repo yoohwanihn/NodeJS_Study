@@ -19,12 +19,11 @@ Babel : 자바스크립트가 매번 업데이트 되기 때문에 구형 브라
 
 ## 패키지 종류
 
-js
-<hr/>
+#### js
 es6 : ES(2015++)6 로 변경되거나 추가 된 자바스크립트 문법들
-node
-<hr/>
+#### node 
 global : 자바스크립트가 아닌 노드 내장 객체 global의 timer와 console을 다루는 함수들(window X)
 ECMAScript_module : Common JS 모듈이 아닌 ES Module 관련된 내장 객체들
 built-in_module : 노드 내장 모듈
 event : events 모듈을 이용해 이벤트 커스텀
+error : 예외 처리
