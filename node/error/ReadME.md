@@ -21,17 +21,17 @@ try/catch로 처리하지 못한 에러가 발생해도 uncaughtException 이벤
 
 ## 자주 발생하는 에러들
 
-<b>node: command not found:</b> 노드를 설치했지만 이 에러가 발생하는 경우 환경변수가 제대로 설정되어 있지 않은 것이다. node 외의 다른 명령어도 그 명령어를 수행할 수 있는 파일이 환경 변수에 들어 있어야 명령어를 콘솔에서 사용할 수 있다.
-<b>ReferenceError: 모듈 is not defined:</b> 모듈을 require했는지 확인
-<b>Error: Cannot find moudel 모듈명:</b> 해당 모듈을 require했지만 설치하지 않았다. npm i 명령어로 설치할 것.
-<b>Error [ERR_MODULE_NOT_FOUND]:</b> 존재하지 않는 모듈을 불러오려 할 때 발생
-<b>ERROR: Cant' set headers after the are sent:</b> 요청에 대한 응답을 보낼 때 응답을 두 번 이상 보냈을 경우 발생
-<b>FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory:</b> 코드 실행시 메모리가 부족해서 스크립트가 정상적으로 작동되지 않는 경우. 코드가 잘못 구현되어 있을 확률이 높으며, 노드가 활용할 수 있는 메모리가 부족한 경우라면 노드의 메모리를 늘리면 된다. node --max-old-space-size=4096 파일명
-<b>UnhandledPromiseRejectionWarning: Unhandled promise rejection:</b> 프로미스 사용 시 catch 메서드를 붙이지 않을 경우 발생
-<b>EADDRINUSE 포트 번호:</b> 해당 포트 번호에 이미 다른 프로세스가 연결되어 있을 경우 발생
-<b>EACCES 또는 EPERM:</b> 노드 작업의 권한이 충분하지 않을 경우 발생. 파일/폴더 수정, 삭제, 생성 권한을 확인하고 맥이나 리눅스라면 명령어 앞에 sudo를 붙이는 등으로 권한을 해결해야 함
-<b>EJSONPARSE:</b> package.json 등의 JSON 파일에 문법 오류가 있을 때 발생. 자바스크립트 객체와는 형식이 조금 다르기에 쉼표 등을 확인 
-<b>ECONNREFUSED:</b> 요청을 보냈으나 연결이 성립되지 않음. 요청을 받는 서버의 주소와 서버 상태등을 확인
-<b>ETARGET:</b> package.json에 기록한 패키지 버전이 존재하지 않을 때 발생
-<b>ETIMEOUT:</b> 요청을 보냈으나 응답이 시간 내에 오지 않을 때 발생. 요청을 받는 서버 상태 점검
+<b>node: command not found:</b> 노드를 설치했지만 이 에러가 발생하는 경우 환경변수가 제대로 설정되어 있지 않은 것이다. node 외의 다른 명령어도 그 명령어를 수행할 수 있는 파일이 환경 변수에 들어 있어야 명령어를 콘솔에서 사용할 수 있다.<br>
+<b>ReferenceError: 모듈 is not defined:</b> 모듈을 require했는지 확인<br>
+<b>Error: Cannot find moudel 모듈명:</b> 해당 모듈을 require했지만 설치하지 않았다. npm i 명령어로 설치할 것.<br>
+<b>Error [ERR_MODULE_NOT_FOUND]:</b> 존재하지 않는 모듈을 불러오려 할 때 발생<br>
+<b>ERROR: Cant' set headers after the are sent:</b> 요청에 대한 응답을 보낼 때 응답을 두 번 이상 보냈을 경우 발생<br>
+<b>FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory:</b> 코드 실행시 메모리가 부족해서 스크립트가 정상적으로 작동되지 않는 경우. 코드가 잘못 구현되어 있을 확률이 높으며, 노드가 활용할 수 있는 메모리가 부족한 경우라면 노드의 메모리를 늘리면 된다.<br> node --max-old-space-size=4096 파일명<br>
+<b>UnhandledPromiseRejectionWarning: Unhandled promise rejection:</b> 프로미스 사용 시 catch 메서드를 붙이지 않을 경우 발생<br>
+<b>EADDRINUSE 포트 번호:</b> 해당 포트 번호에 이미 다른 프로세스가 연결되어 있을 경우 발생<br>
+<b>EACCES 또는 EPERM:</b> 노드 작업의 권한이 충분하지 않을 경우 발생. 파일/폴더 수정, 삭제, 생성 권한을 확인하고 맥이나 리눅스라면 명령어 앞에 sudo를 붙이는 등으로 권한을 해결해야 함<br>
+<b>EJSONPARSE:</b> package.json 등의 JSON 파일에 문법 오류가 있을 때 발생. 자바스크립트 객체와는 형식이 조금 다르기에 쉼표 등을 확인 <br>
+<b>ECONNREFUSED:</b> 요청을 보냈으나 연결이 성립되지 않음. 요청을 받는 서버의 주소와 서버 상태등을 확인<br>
+<b>ETARGET:</b> package.json에 기록한 패키지 버전이 존재하지 않을 때 발생<br>
+<b>ETIMEOUT:</b> 요청을 보냈으나 응답이 시간 내에 오지 않을 때 발생. 요청을 받는 서버 상태 점검<br>
 <b>ENOENT: no such file or directory:</b> 지정한 폴더나 파일이 존재하지 않는 경우 발생. 맥이나 리눅스는 대소문자도 구별하므로 확인해야 함
